@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">OptimizeDatabase</string>
+    <string name="exec_time">Minimum Execution time of all submission:</string>
+</resources>

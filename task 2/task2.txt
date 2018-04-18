@@ -1,0 +1,23 @@
+﻿Problem Statement: 
+Optimise the database : Make an app that download all of the files and store it in database in the android app locally.
+
+
+Approach:
+1. Downloading Files
+For downloading the files, I have used volley library.
+
+
+1. Processing Response From Volley (html file content)
+        The response from volley was stored in string object. Using Jsoup Library, extracted the 
+        content between paragraph the tag and inserted in database. This reduced the
+         response processing.
+
+
+1. Storing in Database
+Room database is used for storing the content.
+
+
+1. Calculation of execution time
+        To calculate the execution time for each submission, the difference between the time as 
+soon as we receive the response and after the insert query for database is called is 
+taken into consideration.

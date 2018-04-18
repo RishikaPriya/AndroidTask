@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/bar_layout"
+            android:id="@+id/header_bar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+        <include layout="@layout/date_layout"
+            android:id="@+id/dateLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+        <include layout="@layout/day_layout"
+            android:id="@+id/dayLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/dateLayout" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dayLayout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frame1">
+                <include layout="@layout/alarm_list_layout"
+                    android:id="@+id/alarmListLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frame2"
+                android:visibility="gone">
+                <include layout="@layout/set_alarm_layout"
+                    android:id="@+id/setAlarmLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

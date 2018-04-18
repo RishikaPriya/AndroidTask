@@ -1,0 +1,9 @@
+﻿Problem Statement: 
+Create the UI as seen in this link: https://s3.amazonaws.com/avantari-assets/Task+4.webp
+
+
+Approach:
+
+
+In this task, I was asked to create a UI component, for that I have followed the android material design.
+Created reusable layouts and used animations like circularReveal.

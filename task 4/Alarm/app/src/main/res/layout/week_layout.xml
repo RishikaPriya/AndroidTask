@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="7">
+
+    <TextView
+        android:id="@+id/sunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:textSize="@dimen/dimen_16sp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:text="SU" />
+
+    <TextView
+        android:id="@+id/monday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:textSize="@dimen/dimen_16sp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:text="MO" />
+
+    <TextView
+        android:id="@+id/tuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:textSize="@dimen/dimen_16sp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:text="TU" />
+
+    <TextView
+        android:id="@+id/wednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:textSize="@dimen/dimen_16sp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:text="WE" />
+
+    <TextView
+        android:id="@+id/thursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_16sp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:text="TH" />
+
+    <TextView
+        android:id="@+id/friday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:textSize="@dimen/dimen_16sp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:text="FR" />
+
+    <TextView
+        android:id="@+id/saturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:textSize="@dimen/dimen_16sp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:text="SA" />
+
+</LinearLayout>

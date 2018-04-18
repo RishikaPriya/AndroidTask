@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/setAlarmLayout"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:id="@+id/alarmLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_20dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/week_layout"
+            android:padding="@dimen/dimen_20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3"
+            android:padding="@dimen/dimen_20dp">
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/dimen_20dp">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="H"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_16sp"/>
+
+                    <Spinner
+                        style="@style/spinnerStyle"
+                        android:id="@+id/hourSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dimen_10dp"
+                        android:paddingBottom="@dimen/dimen_10dp"
+                        android:entries="@array/hour_arrays"
+                        android:prompt="@string/hour_promt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/dimen_20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_16sp"/>
+
+                <Spinner
+                    style="@style/spinnerStyle"
+                    android:id="@+id/minuteSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_10dp"
+                    android:paddingBottom="@dimen/dimen_10dp"
+                    android:entries="@array/min_sec_arrays"
+                    android:prompt="@string/min_promt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_16sp"/>
+
+                <Spinner
+                    style="@style/spinnerStyle"
+                    android:id="@+id/secondsSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_10dp"
+                    android:paddingBottom="@dimen/dimen_10dp"
+                    android:entries="@array/min_sec_arrays"
+                    android:prompt="@string/sec_promt" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10dp">
+
+            <Button
+                android:id="@+id/begin_action"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="@dimen/dimen_50dp"
+                android:background="@color/white"
+                android:layout_margin="@dimen/dimen_20dp"
+                android:textSize="@dimen/dimen_18sp"
+                android:text="@string/begin" />
+
+            <Button
+                android:id="@+id/cancel_action"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="@dimen/dimen_50dp"
+                android:layout_margin="@dimen/dimen_20dp"
+                android:background="@color/red"
+                android:textColor="@color/white"
+                android:onClick="doBack"
+                android:textSize="@dimen/dimen_18sp"
+                android:text="@string/cancel"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

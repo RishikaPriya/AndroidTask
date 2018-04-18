@@ -1,0 +1,12 @@
+﻿Problem Statement: 
+Hack your android phone : Make a text injection app that listens to the text typed
+on any editable view (EditText ) across the OS and once the text "Android" is typed it should be
+replaced by word "Hacked" .
+
+
+
+
+Approach:
+
+
+To solve this problem, I have created an accessibility service. At the start of application, one have to turn on the accessibility service (named Hacked in this application). After turning it on, on typing “Android” in edittext it will be replaced by word “Hacked”.
